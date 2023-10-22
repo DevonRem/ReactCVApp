@@ -1,0 +1,23 @@
+.GeneralInfo {
+    border: solid black;
+    background-color: rgb(211,211,211);
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 40vw;
+    margin-left:1vw;
+}
+
+.firstName {
+    margin-right: 10px;
+}
+
+.theRest {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+
+}
+
+input {
+    margin-top: 7px;
+}
