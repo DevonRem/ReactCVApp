@@ -1,1 +1,2 @@
 # ReactCVApp
+For my first React project I created a small CV application that takes a set of user info and uses it to create a CV. This project is my first time incorporating React specific tools into a project such as components and states.
