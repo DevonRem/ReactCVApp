@@ -1,75 +1,35 @@
 import { useState } from 'react'
 import '../styles/Education.css'
+import './EducationForm'
+import EducationForm from './EducationForm';
 
 function Education() {
-    const [inputs, setInputs] = useState({
-        schoolName: "",
-        degree: "",
-        startDate: "",
-        endDate: ""
-      });
+  const [list, setList] = useState([0]);
   
-      const handleChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-  
-        setInputs((prev) => {
-          return {...prev, [name]: value}
-        })
-      }
+
+  let addEducation = (e) => {
+    e.preventDefault();
+    setList([...list,<list key={list.length}/>]);
+  }
+
+  let removeEducation = (e) => {
+    e.preventDefault();
+    const list2=[...list];
+    list2.pop();
+    setList(list2);
+  }
     
     return(
         <>
-         <div className='wholePage'>
-        <div className="EducationLeftSide">
-        <h2>Education</h2>
-           <form className='formName'>
-            <div className='firstTwo'>
-                    <input type='text' 
-                    value={inputs.schoolName} 
-                    onChange={handleChange} 
-                    id='schoolName' 
-                    name='schoolName'
-                    className='schoolName' 
-                    placeholder='School Name' 
-                    maxLength='30'/>
-
-                    <input type='text' 
-                    value={inputs.degree} 
-                    onChange={handleChange} 
-                    id='degree'
-                    name='degree' 
-                    className='degree' 
-                    placeholder='Degree' 
-                    maxLength='30'/>
-            </div>
-            <div className='lastTwo'>
-                    <p className='dateText'>Start Date:</p>
-                    <input type='date'
-                    value={inputs.startDate} 
-                    onChange={handleChange}  
-                    id='startDate' 
-                    name='startDate' />
-
-                    <p className='dateText'>End Date:</p>
-                    <input type='date' 
-                    value={inputs.endDate} 
-                    onChange={handleChange} 
-                    id='endDate'
-                    name='endDate'  />
-            </div>
-           </form>
-        </div>
-        <div className='CVRightSide'>
-        <h1>Education:</h1>
-        <p className='rightsideDate'>{ inputs.startDate } - { inputs.endDate } | <b>{inputs.schoolName} </b></p>
-        <p>{inputs.degree}</p>
-
-        </div>
-        </div>
-    
+        
+          {list.map(id => <EducationForm key={id} />)}
+ 
+         <button onClick={addEducation}>Add Education</button>
+         <button onClick={removeEducation}>Remove Education</button>
+         
         </>
     )
+
 
 }
 

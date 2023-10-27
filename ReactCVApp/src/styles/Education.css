@@ -48,6 +48,11 @@ label {
     display: block;
     text-align: center;
     border-top: none;
+    border-bottom: none;
 
 }
 
+
+.hidden {
+    display: none;
+}
