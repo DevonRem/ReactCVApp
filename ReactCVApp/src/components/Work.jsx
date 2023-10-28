@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import '../styles/Education.css'
-import './EducationForm'
-import EducationForm from './EducationForm';
+import '../styles/Work.css'
+import './WorkForm'
+import WorkForm from './WorkForm';
 
 function Education() {
   const [list, setList] = useState([0]);
   
 
-  let addEducation = (e) => {
+  let addWork = (e) => {
     e.preventDefault();
     setList([...list,<list key={list.length}/>]);
   }
 
-  let removeEducation = (e) => {
+  let removeWork = (e) => {
     e.preventDefault();
     const list2=[...list];
     list2.pop();
@@ -22,10 +22,10 @@ function Education() {
     return(
         <>
         
-          {list.map(id => <EducationForm key={id} />)}
+          {list.map(id => <WorkForm key={id} />)}
 
-         <button onClick={addEducation}>Add Education</button>
-         <button onClick={removeEducation}>Remove Education</button>
+         <button onClick={addWork}>Add Experience</button>
+         <button onClick={removeWork}>Remove Experience</button>
          
         </>
     )

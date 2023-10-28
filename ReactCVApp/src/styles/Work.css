@@ -1,0 +1,58 @@
+.wholePage {
+    display: flex;
+}
+
+.rightsideDate {
+    text-align: left;
+}
+
+.EducationLeftSide {
+    margin-top: 5vh;
+    border: solid black;
+    background-color: rgb(211,211,211);
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 40vw;
+    margin-left:1vw;
+}
+
+.firstTwo {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+}
+
+.dates {
+    display: flex;
+}
+
+.dateText {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input {
+    margin-top: 7px;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+.CVRightSide {    
+    border: solid black;
+    padding: 0 10px;
+    margin-left: 5vw;
+    width: 40vw;
+    display: block;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+
+.hidden {
+    display: none;
+}

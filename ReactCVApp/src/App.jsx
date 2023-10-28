@@ -2,6 +2,7 @@
 import './App.css'
 import Education from './components/Education'
 import GeneralInfo from './components/GeneralInfo'
+import Work from './components/Work'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <GeneralInfo></GeneralInfo>
       <Education></Education>
+      <Work></Work>
     </>
   )
 }
