@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import '../styles/Education.css'
 import './EducationForm'
-import EducationForm from './EducationForm';
+import EducationForm from './EducationForm'
+import EducationFormWithTitle from './EducationFormWithTitle'
 
 function Education() {
   const [list, setList] = useState([0]);
@@ -12,6 +13,7 @@ function Education() {
     setList([...list,<list key={list.length}/>]);
   }
 
+
   let removeEducation = (e) => {
     e.preventDefault();
     const list2=[...list];
@@ -21,11 +23,11 @@ function Education() {
     
     return(
         <>
-        
+          <EducationFormWithTitle></EducationFormWithTitle>
           {list.map(id => <EducationForm key={id} />)}
 
-         <button onClick={addEducation}>Add Education</button>
-         <button onClick={removeEducation}>Remove Education</button>
+         <button className='addRemoveButtons' onClick={addEducation}>Add Education</button>
+         <button className='addRemoveButtons' onClick={removeEducation}>Remove Education</button>
          
         </>
     )

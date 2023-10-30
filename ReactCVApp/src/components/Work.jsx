@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../styles/Work.css'
 import './WorkForm'
 import WorkForm from './WorkForm';
+import WorkFormWithTitle from './WorkFormWithTitle';
 
 function Education() {
   const [list, setList] = useState([0]);
@@ -10,6 +11,7 @@ function Education() {
   let addWork = (e) => {
     e.preventDefault();
     setList([...list,<list key={list.length}/>]);
+
   }
 
   let removeWork = (e) => {
@@ -21,11 +23,11 @@ function Education() {
     
     return(
         <>
-        
+          <WorkFormWithTitle></WorkFormWithTitle>
           {list.map(id => <WorkForm key={id} />)}
 
-         <button onClick={addWork}>Add Experience</button>
-         <button onClick={removeWork}>Remove Experience</button>
+         <button className='addRemoveButtons' onClick={addWork}>Add Experience</button>
+         <button className='addRemoveButtons' onClick={removeWork}>Remove Experience</button>
          
         </>
     )

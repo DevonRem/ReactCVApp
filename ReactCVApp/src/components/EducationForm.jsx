@@ -66,7 +66,6 @@ function EducationForm() {
         </div>
 
         <div className='CVRightSide'>
-        <h1 className='educationRightSide'>Education</h1>
         <p className='rightsideDate'>{ inputs.startDate } - { inputs.endDate } | <b>{inputs.schoolName} </b></p>
         <p>{inputs.degree}</p>
 

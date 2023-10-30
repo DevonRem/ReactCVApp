@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../styles/Work.css'
 
-function WorkForm() {
+function WorkFormWithTitle() {
     const [inputs, setInputs] = useState({
         companyName: "",
         position: "",
@@ -77,6 +77,7 @@ function WorkForm() {
         </div>
 
         <div className='CVRightSide'>
+        <h1 className='workRightSide'>Work Experience</h1>
         <p className='rightsideDate'>{ inputs.startDate } - { inputs.endDate } | <b>{inputs.companyName} </b></p>
         <p>{inputs.position}</p>
         <p>{inputs.description}</p>
@@ -90,4 +91,4 @@ function WorkForm() {
 
 }
 
-export default WorkForm
+export default WorkFormWithTitle

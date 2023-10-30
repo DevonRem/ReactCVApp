@@ -56,3 +56,8 @@ label {
 .hidden {
     display: none;
 }
+
+.addRemoveButtons {
+    margin-top: 5px;
+    margin-left: 12px;
+}

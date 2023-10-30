@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import '../styles/Work.css'
+import '../styles/Education.css'
 
-function WorkForm() {
+function EducationFormWithTitle() {
     const [inputs, setInputs] = useState({
-        companyName: "",
-        position: "",
+        schoolName: "",
+        degree: "",
         startDate: "",
-        endDate: "",
-        description: ""
+        endDate: ""
       });
   
       const handleChange = (e) => {
@@ -24,29 +23,29 @@ function WorkForm() {
         <>
         <div className='wholePage'>
             <div className="EducationLeftSide">
-            <h2>Work Experience</h2>
+            <h2>Education</h2>
             <form className='formName'>
                 <div className='wholeForm'>
                 <div className='firstTwo'>
                         <input type='text' 
-                        value={inputs.companyName} 
+                        value={inputs.schoolName} 
                         onChange={handleChange} 
-                        id='companyName' 
-                        name='companyName'
-                        className='companyName' 
-                        placeholder='Company Name' 
+                        id='schoolName' 
+                        name='schoolName'
+                        className='schoolName' 
+                        placeholder='School Name' 
                         maxLength='30'/>
 
                         <input type='text' 
-                        value={inputs.position} 
+                        value={inputs.degree} 
                         onChange={handleChange} 
-                        id='position'
-                        name='position' 
-                        className='position' 
-                        placeholder='Position Title' 
+                        id='degree'
+                        name='degree' 
+                        className='degree' 
+                        placeholder='Degree' 
                         maxLength='30'/>
                 </div>
-                <div className='dates'>
+                <div className='lastTwo'>
                         <p className='dateText'>Start Date:</p>
                         <input type='date'
                         value={inputs.startDate} 
@@ -61,25 +60,15 @@ function WorkForm() {
                         id='endDate'
                         name='endDate'  />
                 </div>
-                <div className='description'>
-                        <textarea type='text' 
-                        value={inputs.description} 
-                        onChange={handleChange} 
-                        id='description'
-                        name='description' 
-                        className='description' 
-                        placeholder='Main Tasks Description' />
-                </div>
-
                 </div>
 
             </form>
         </div>
 
         <div className='CVRightSide'>
-        <p className='rightsideDate'>{ inputs.startDate } - { inputs.endDate } | <b>{inputs.companyName} </b></p>
-        <p>{inputs.position}</p>
-        <p>{inputs.description}</p>
+        <h1 className='educationRightSide'>Education</h1>
+        <p className='rightsideDate'>{ inputs.startDate } - { inputs.endDate } | <b>{inputs.schoolName} </b></p>
+        <p>{inputs.degree}</p>
 
         </div>
 
@@ -90,4 +79,4 @@ function WorkForm() {
 
 }
 
-export default WorkForm
+export default EducationFormWithTitle
