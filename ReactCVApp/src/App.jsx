@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
+    <div className='everything'>
       <GeneralInfo></GeneralInfo>
       <Education></Education>
       <Work></Work>
+    </div>
     </>
   )
 }

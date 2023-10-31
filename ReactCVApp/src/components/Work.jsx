@@ -26,9 +26,16 @@ function Education() {
           <WorkFormWithTitle></WorkFormWithTitle>
           {list.map(id => <WorkForm key={id} />)}
 
+        <div className='all'>
+        <div className='leftSide'>
          <button className='addRemoveButtons' onClick={addWork}>Add Experience</button>
          <button className='addRemoveButtons' onClick={removeWork}>Remove Experience</button>
-         
+         </div>
+        <div className='rightSide'>
+        
+        </div>
+        </div>
+
         </>
     )
 

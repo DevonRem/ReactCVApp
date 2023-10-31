@@ -26,8 +26,15 @@ function Education() {
           <EducationFormWithTitle></EducationFormWithTitle>
           {list.map(id => <EducationForm key={id} />)}
 
+        <div className='all'>
+        <div className='leftSide'>
          <button className='addRemoveButtons' onClick={addEducation}>Add Education</button>
          <button className='addRemoveButtons' onClick={removeEducation}>Remove Education</button>
+        </div>
+        <div className='rightSide'>
+        
+        </div>
+        </div>
          
         </>
     )

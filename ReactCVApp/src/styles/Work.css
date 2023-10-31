@@ -56,3 +56,24 @@ label {
 .hidden {
     display: none;
 }
+
+.leftSide {
+    border: solid black;
+    background-color: rgb(211,211,211);
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 40vw;
+    margin-left:1vw;
+}
+
+.rightSide {
+    border: solid black;
+    padding: 0 10px;
+    margin-left: 5vw;
+    width: 40vw;
+    display: block;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+
+}
