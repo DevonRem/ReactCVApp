@@ -8,7 +8,7 @@
 
 .EducationLeftSide {
     margin-top: 5vh;
-    border: solid black;
+
     background-color: rgb(211,211,211);
     padding: 10px;
     padding-bottom: 30px;
@@ -41,7 +41,7 @@ label {
 }
 
 .CVRightSide {    
-    border: solid black;
+
     padding: 0 10px;
     margin-left: 5vw;
     width: 40vw;
@@ -49,7 +49,7 @@ label {
     text-align: center;
     border-top: none;
     border-bottom: none;
-
+    background-color: #FFF;
 }
 
 .all {
@@ -58,7 +58,7 @@ label {
 }
 
 .leftSide {
-    border: solid black;
+
     background-color: rgb(211,211,211);
     padding: 10px;
     padding-bottom: 30px;
@@ -67,7 +67,7 @@ label {
 }
 
 .rightSide {
-    border: solid black;
+
     padding: 0 10px;
     margin-left: 5vw;
     width: 40vw;

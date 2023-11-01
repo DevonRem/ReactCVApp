@@ -3,7 +3,7 @@
 }
 
 .GeneralInfoLeftSide {
-    border: solid black;
+    border-radius: 15px;
     background-color: rgb(211,211,211);
     padding: 10px;
     padding-bottom: 30px;
@@ -32,13 +32,14 @@ label {
 }
 
 .CVHeaderRightSide {    
-    border: solid black;
+
     padding: 10px;
     margin-left: 5vw;
     width: 40vw;
     display: block;
     text-align: center;
     border-bottom: none;
+    background-color: #FFF;
 
 }
 

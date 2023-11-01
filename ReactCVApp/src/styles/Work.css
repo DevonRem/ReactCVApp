@@ -8,7 +8,7 @@
 
 .EducationLeftSide {
     margin-top: 5vh;
-    border: solid black;
+    border-radius: 15px 15px 0px 0px;
     background-color: rgb(211,211,211);
     padding: 10px;
     padding-bottom: 30px;
@@ -41,7 +41,7 @@ label {
 }
 
 .CVRightSide {    
-    border: solid black;
+
     padding: 0 10px;
     margin-left: 5vw;
     width: 40vw;
@@ -50,6 +50,7 @@ label {
     border-top: none;
     border-bottom: none;
     font-size: 1.5rem;
+    background-color: #FFF;
 }
 
 
@@ -58,7 +59,7 @@ label {
 }
 
 .leftSide {
-    border: solid black;
+    border-radius: 0px 0px 15px 15px;
     background-color: rgb(211,211,211);
     padding: 10px;
     padding-bottom: 30px;
@@ -67,7 +68,7 @@ label {
 }
 
 .rightSide {
-    border: solid black;
+
     padding: 0 10px;
     margin-left: 5vw;
     width: 40vw;
@@ -75,5 +76,9 @@ label {
     text-align: center;
     border-top: none;
     border-bottom: none;
+    background-color: #FFF;
+}
 
+textarea {
+    margin-top: 5px;
 }
